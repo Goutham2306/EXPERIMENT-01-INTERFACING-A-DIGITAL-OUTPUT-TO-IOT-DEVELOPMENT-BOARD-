@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 13/02/2024
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: Goutham.K
+###  ROLL NO :212223110019
+###  DEPARTMENT: CSE(Internet Of Things)
 
 
 
@@ -86,12 +86,36 @@ The main features of LPC2148 include the following.
 
 
 ## STM 32 CUBE PROGRAM :
+```#include "main.h"
 
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  while (1)
+  {
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+	HAL_Delay(3000);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+	HAL_Delay(3000);
+  }  
+}
+```
 
 
 
 
 ## OUTPUT  :
+# LED OFF:
+![image](https://github.com/Goutham2306/EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD-/assets/138971154/0e80264d-7bd2-4c16-afd4-08f7497aca6f)
+# LED ON:
+
+
+![image](https://github.com/Goutham2306/EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD-/assets/138971154/9c22330e-df9b-49e6-b8fd-02f278a2294b)
+
+
+
  
  
  
